@@ -69,6 +69,7 @@ const App = () => {
   const [filterRole, setFilterRole] = useState('all');
   const [notification, setNotification] = useState(null);
   const [showAddToWorkspaceModal, setShowAddToWorkspaceModal] = useState(false);
+  const [newMemberRole, setNewMemberRole] = useState('member');
   const [selectedUserForAdd, setSelectedUserForAdd] = useState(null);
   const [showHeaderDropdown, setShowHeaderDropdown] = useState(false);
 
