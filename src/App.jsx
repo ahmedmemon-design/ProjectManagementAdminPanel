@@ -69,7 +69,6 @@ const App = () => {
   const [filterRole, setFilterRole] = useState('all');
   const [notification, setNotification] = useState(null);
   const [showAddToWorkspaceModal, setShowAddToWorkspaceModal] = useState(false);
-  const [newMemberRole, setNewMemberRole] = useState('member');
   const [selectedUserForAdd, setSelectedUserForAdd] = useState(null);
   const [showHeaderDropdown, setShowHeaderDropdown] = useState(false);
 
@@ -773,19 +772,7 @@ const App = () => {
                     ))}
                 </select>
               </div>
-              
-              <div className="mb-6">
-                <label className="block text-gray-300 mb-2">Select Role</label>
-                <select
-                  value={newMemberRole}
-                  onChange={(e) => setNewMemberRole(e.target.value)}
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-                >
-                  <option value="member">Member</option>
-                  <option value="admin">Admin</option>
-                  <option value="client">Client</option>
-                </select>
-              </div>
+            
               
               <div className="flex space-x-3">
                 <button
